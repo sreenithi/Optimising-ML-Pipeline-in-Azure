@@ -1,3 +1,5 @@
 .ipynb_checkpoints/
 .ipynb_aml_checkpoints/
 __pycache__/
+automl.log
+azureml_automl.log
