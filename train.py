@@ -55,6 +55,11 @@ def main():
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
 
+    os.makedirs('./outputs', exist_ok=True)
+    joblib.dump(model, "./outputs/model.joblib")
+
+
+
 # TODO: Create TabularDataset using TabularDatasetFactory
 # Data is located at:
 # "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
